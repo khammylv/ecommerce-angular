@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { SearchComponent } from './search/search.component';
     HomeComponent,
     SearchComponent,
 
+   
   ],
   imports: [
     BrowserModule,

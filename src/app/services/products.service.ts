@@ -24,4 +24,8 @@ export class ProductsService {
     return this.http.get(`${this.baseurl}/products//search?q=${word}`)
   }
 
+  showProductUnico(id: number){
+    return this.http.get(`${this.baseurl}/products/${id}`)
+  }
+  
 }
