@@ -12,4 +12,16 @@ export class ProductsService {
     return this.http.get(`${this.baseurl}/products`)
   }
 
+  showCategories(){
+    return this.http.get(`${this.baseurl}/products/categories`)
+  }
+
+  showProductsCategory(category:any){
+    return this.http.get(`${this.baseurl}/products/category/${category}`)
+  }
+
+  showProductsSearch(word:any){
+    return this.http.get(`${this.baseurl}/products//search?q=${word}`)
+  }
+
 }
