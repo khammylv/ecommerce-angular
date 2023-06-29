@@ -1,0 +1,142 @@
+<nav class=" w-full border-b border-gray-200 bg-white py-2.5 px-6 sm:px-4">
+    <div class="container mx-auto flex max-w-6xl flex-wrap items-center justify-between">
+      <a href="#" class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="mr-3 h-6 text-blue-500 sm:h-9">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+        </svg>
+  
+        <span class="self-center whitespace-nowrap text-xl font-semibold">Termcode</span>
+      </a>
+      <div class="mt-2 sm:mt-0 sm:flex md:order-2">
+        <!-- Login Button -->
+        <button type="button"
+          class="rounde mr-3 hidden border border-blue-700 py-1.5 px-6 text-center text-sm font-medium text-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 md:inline-block rounded-lg">Login</button>
+        <button type="button"
+          class="rounde mr-3 hidden bg-blue-700 py-1.5 px-6 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0 md:inline-block rounded-lg">Register</button>
+        <!-- Register Button -->
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="container-cart-icon" (click)="show = !show">
+        <div class="container-cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+            class="icon-cart">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+          </svg>
+        </div>
+      </div>
+      
+      <div class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto" id="navbar-sticky">
+        <ul
+          class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:text-sm md:font-medium">
+          <li>
+            <a href="#"
+              class="block rounded bg-blue-700 py-2 pl-3 pr-4 text-white md:bg-transparent md:p-0 md:text-blue-700"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700">About</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700">Services</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700">Contact</a>
+          </li>
+        </ul>
+      </div>
+     
+      
+    </div>
+  </nav>
+
+  
+
+<div class="max-w-2xl mx-auto" *ngIf="show">
+
+    <div class="flex flex-col">
+      <div class="overflow-x-auto shadow-md sm:rounded-lg">
+        <div class="inline-block min-w-full align-middle">
+          <div class="overflow-hidden ">
+  
+            <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
+              <thead class="bg-gray-100 dark:bg-gray-700">
+                <tr>
+                  <th scope="col"
+                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                    Product Name
+                  </th>
+                  <th scope="col"
+                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                    Category
+                  </th>
+                  <th scope="col"
+                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                    Price
+                  </th>
+                  <th scope="col"
+                    class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                    Cant
+                  </th>
+                  <th scope="col" class="p-4">
+                    <span class="sr-only">Edit</span>
+                  </th>
+  
+                </tr>
+              </thead>
+  
+              <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
+  
+                <tr class="hover:bg-gray-100 dark:hover:bg-gray-700"  *ngFor="let item of cart.items">
+  
+                  <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    {{item.title}}</td>
+                  <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">
+                    {{item.category}}
+                  </td>
+                  <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    ${{item.price}}</td>
+                  <td>
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                      (click)="agregarMenos(item)"></button>
+                      <input class="quantity bg-light" min="1" name="quantity" value={{item.quantity}} type="number" #identificador>
+                      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        (click)="agregarMas(item)"
+                        class="plus"></button>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
+                    <button  class="text-blue-600 dark:text-blue-500 hover:underline"
+                    (click)="onRemoveFromCart(item)" >Delete</button>
+                  </td>
+  
+                </tr>
+  
+  
+  
+  
+              </tbody>
+  
+            </table>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
