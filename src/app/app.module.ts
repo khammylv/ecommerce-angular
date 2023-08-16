@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -28,8 +30,9 @@ import { ModalComponent } from './pages/modal/modal.component';
 import { FilterProductsComponent } from './pages/home/component/filter-products/filter-products.component';
 import { ProductsBoxComponent } from './pages/home/component/products-box/products-box.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './pages/login/login.component';
 
-
+import { SweetAlert2Module } from "@sweetalert2/ngx-sweetalert2";
 
 @NgModule({
   declarations: [
@@ -40,6 +43,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ModalComponent,
     FilterProductsComponent,
     ProductsBoxComponent,
+    LoginComponent,
 
    
   ],
@@ -47,6 +51,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
 
     MatSidenavModule,
     MatGridListModule,
@@ -62,6 +68,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatBadgeModule,
     MatSnackBarModule,
     BrowserAnimationsModule,
+    SweetAlert2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
