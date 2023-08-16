@@ -9,6 +9,8 @@ import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 export class CartService {
   cart = new BehaviorSubject<Cart>({ items: [] });
   constructor(private _snackBar: MatSnackBar) { }
+  isLogged = false; 
+
 
   addToCart(item: CartItem):void{
     const items = [...this.cart.value.items];
@@ -62,5 +64,18 @@ export class CartService {
     });
 
     return filteredItems;
+  }
+
+  getLogged(){
+    return sessionStorage.getItem('logged') != null
+      ? sessionStorage.getItem('logged')?.toString()
+      : '';
+  }
+
+  isLoggedIn(){
+    if(this.getLogged() === 'true'){
+      this.isLogged = true;
+    }
+    return this.isLogged;
   }
 }
