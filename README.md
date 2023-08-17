@@ -1,27 +1,36 @@
-# EcommerceAmgular
+# Proyecto de Ecommerce con Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+## Índice
 
-## Development server
+* [1. Resumen del proyecto](#1-resumen-del-proyecto)
+* [2. Prototipos](#2-prototipos)
+* [3. Modo de uso ](#3-modo-de-uso)
+* [4. Claves de acceso ](#4-claves-de-acceso)
+* [5. Link de la aplicación](#5-Link-de-la-aplicación)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+***
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 1. Resumen del proyecto
 
-## Build
+¡Bienvenido al proyecto de Ecommerce desarrollado con Angular que consume una API! En este proyecto,  construí una aplicación de comercio electrónico utilizando el framework Angular y que interactua con una API para obtener y mostrar datos de productos, realizar compras simuladas y mucho más.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 2.Características
 
-## Running unit tests
+Lista de productos: Muestra una lista de productos disponibles obtenidos desde la API.
+Detalles del producto: Permite ver detalles específicos de un producto seleccionado.
+Carrito de compras: Permite agregar productos al carrito, ajustar las cantidades y calcular el total.
+Interacción con API: Utiliza peticiones HTTP para obtener y enviar datos desde y hacia la API.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## 4.  Claves de acceso
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* `usuario 1`:atuny0
+* `password`:9uQFF1Lh
+* `usuario 2`:kminchelle
+* `password`:0lelplR
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 5.  Link de la aplicación
+
+https://ecommerce-angular-tau.vercel.app/home
